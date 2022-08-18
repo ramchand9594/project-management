@@ -12,7 +12,11 @@ export class ProjectsDataAccess {
             estimatedHours: 800,
             managerId: "",
             status: Status.NEW,
-            title: "New Project"
+            title: "New Project",
+            createdDate: new Date(),
+            updatedDate: new Date(),
+            createdUser: "",
+            updatedUser: ""
         })
     }
 
@@ -21,14 +25,6 @@ export class ProjectsDataAccess {
     }
 
     static async getAllProjects(): Promise<Project[]> {
-        return Promise.resolve([]);
-    }
-
-    static async getTasksOfProject(projectId: string): Promise<Tasks[]> {
-        return Promise.resolve([]);
-    }
-
-    static async getTasksWithIds(ids: string[]): Promise<Tasks[]> {
         return Promise.resolve([]);
     }
 }

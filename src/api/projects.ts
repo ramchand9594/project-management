@@ -4,7 +4,7 @@ import { ProjectService } from '../services/project-service';
 const Projects = express.Router();
 Projects.get('/:projectId', async(req, res) => {
     const result = await ProjectService.isOnSchedule(req.params.projectId);
-    res.json({
+    return res.json({
         projectId: req.params.projectId,
         result
     });
