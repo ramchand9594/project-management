@@ -11,10 +11,7 @@ export type Tasks = {
     startDate: Date,
     endDate: Date,
     estimatedHours: number,
-    dependentTasks: {
-        needsCompletionToStart: Boolean,
-        taskId: string,
-    }[],
+    dependentTasks: string[],
     workingEmployeesId: string[],
     requiredEmployeeTypes: {
         type: EmployeeType,
